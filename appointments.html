@@ -1,0 +1,95 @@
+<!--Michael Zarnoth-->
+<!-- ITEC236 Final Project -->
+<!-- tested on: 5/6/22 2:27pm-->
+<!-- Deployed: 5/6/22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="description" content="your best local car shop"> <meta name="keywords" content="Mikes, motors, cars, service">
+	<meta charset="utf-8">
+	<title>Mikes' Motors</title>
+	<link rel="stylesheet" href="https://use.typekit.net/ixm7dsv.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="Styles/SlickNav.css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+        }); 
+    </script>
+</head>
+
+<body>
+
+	<header>
+		<figure class="mb">
+		<img class='mb' src="Images/mm.PNG">
+		<img class='mb_long' src="Images/motors.PNG">
+		</figure>
+	</header>
+	<nav id="mobile_menu"></nav> 
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="stock.html">Stock</a></li>
+        	<li><a href="services.html">Services</a></li>
+			<li><a href="appointments.html" class="current">Appointments</a></li>
+        	<li><a href="finance.html">Finance</a></li>
+        	<li><a href="about_us.html">About us</a></li>
+    	</ul>
+</nav>
+</body>
+
+	<main class="appointment_form">
+		<h1 class="center">Appointment Form</h1>
+		<form name="New Appointment" action="appointment_data.html" method="get">
+	
+		<h2>Contact Information</h2>
+			<label for="email">Email Address:</label>
+			<input type="email" name="email" id="email" autofocus required><br>
+	
+			<label for="Phone">Phone Number:</label>
+			<input type="phone" name="phone" id="phone" required><br>
+	
+			<label for="Full Name">Full Name:</label>
+			<input type="name" name="name" id="name" required><br>
+	
+		<h2>Vehicle Information</h2>
+			<label for="Make">Make:</label>
+			<input type="Make" name="Make" id="Make" required><br>
+	
+			<label for="Model">Model:</label>
+			<input type="Model" name="Model" id="Model" required><br>
+	
+			<label for="year">Year:</label>
+			<input type="text" name="year" id="year" required placeholder="ex: 1990"
+				pattern="\d{4}" title="must be 4 characters"><br>
+			
+			<label for="Miles">Mileage:</label>
+			<input type="numbers" name="miles" required
+				pattern="\d{4}" title="Must be 999999"><br>
+	
+		<h2>Additional Information</h2>
+			<label for="Date">Date Request:</label>
+			<input type="Date" name="Date" id="Date"><br>
+	
+			<label for="Reason">Appointment Reason:</label>
+			<input type="message" name="Reason" id="Reason"><br>
+	
+			<label for="Work">Description of Work:</label>
+			<input type="message" name="Work" id="Work"><br>
+	
+			<label for="Comments">Additional Comments:</label>
+			<input type="Comments" name="Comments" id="Comments"><br>
+
+			<div class ="buttons">
+				<input type="submit" name="register" id="button" value="submit">
+				<input type="reset" name="reset" id="reset">
+			</div>
+		</form>
+	</main>
+	

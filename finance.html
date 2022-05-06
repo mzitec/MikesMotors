@@ -1,0 +1,53 @@
+<!--Michael Zarnoth-->
+<!-- ITEC236 Final Project -->
+<!-- tested on: 5/6/22 2:27pm-->
+<!-- Deployed: 5/6/22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="description" content="your best local car shop"> <meta name="keywords" content="Mikes, motors, cars, service">
+	<meta charset="utf-8">
+	<title>Mikes' Motors</title>
+	<link rel="stylesheet" href="https://use.typekit.net/ixm7dsv.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="Styles/SlickNav.css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+        }); 
+    </script>
+</head>
+
+<body>
+
+	<header>
+		<figure class="mb">
+		<img class='mb' src="Images/mm.PNG">
+		<img class='mb_long' src="Images/motors.PNG">
+		</figure>
+	</header>
+	<nav id="mobile_menu"></nav> 
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="stock.html">Stock</a></li>
+        	<li><a href="services.html">Services</a></li>
+			<li><a href="appointments.html">Appointments</a></li>
+        	<li><a href="finance.html" class="current">Finance</a></li>
+        	<li><a href="about_us.html">About us</a></li>
+    	</ul>
+</nav>
+
+<main class="finance">
+	<h1>We accomodate our customers!</h1>
+	<h3>We accept cash but also offer financing. Use the calculator below to find your preferred loan structure!</h3>
+	<!-- Source:http://www.frograte.com/calculators/loan/ -->
+	<div id="loan-calculator">
+		<a target="_blank" href="http://www.frograte.com/loan-calculator/">Loan Calculator</a><br />
+		<iframe src="http://www.frograte.com/calculator.asp?t=3" height="200" width="235" frameborder="0" allowtransparency="true"></iframe></div>
+</main>

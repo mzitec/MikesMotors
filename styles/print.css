@@ -1,0 +1,64 @@
+
+/* <!--Michael Zarnoth-->
+<!-- ITEC236 Final Project -->
+<!-- tested on: 5/6/22 2:27pm-->
+<!-- Deployed: 5/6/22 --> */
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	background-color: white;
+    border: 2px solid black;
+    font-size: 100%;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+header h2 {
+	color: black;
+}
+.shadow {
+	text-shadow: none;
+}
+nav {
+	display: none;
+}
+section h2 {
+	color: black;
+}
+article {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+/* removes images in the aside */
+aside img {
+	display: none;
+}
+aside h2, aside h3 {
+	color: black;
+	padding-bottom: 1em;	
+}
+
+footer p {
+	color: black;
+}
+/* removes images in the article */
+article img{
+	display: none;
+}
+figure img{
+	display: none;
+}
+header figure{
+	display: none;
+}
+.mobile_menu{
+	display: none;
+}
+script{
+	display: none;
+}
+

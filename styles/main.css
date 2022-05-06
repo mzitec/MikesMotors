@@ -1,0 +1,329 @@
+/* <!--Michael Zarnoth-->
+<!-- ITEC236 Final Project -->
+<!-- tested on: 5/6/22 2:27pm-->
+<!-- Deployed: 5/6/22 --> */
+
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+html {
+	background-color: #ffffff;
+	height: 100%;
+}
+body {
+    width: 100%;
+	margin: 0 auto;
+	height: 100%;
+    background-color: #cde1f1;
+}
+
+/* the styles for the header */
+header {
+	padding: 4em 0 0 0;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+#nav_menu ul a {
+    display: block;
+    width: 16.6667%;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #2a6592;
+    color: white;
+    font-weight: bold;
+	float: left;
+}
+#nav_menu a.current {
+	color: black;
+}
+/* hovering over menu items */
+#nav_menu ul a:hover, #nav_menu ul a:focus {
+	background-color: lightsteelblue;
+}
+
+
+
+
+
+
+/* the styles for the section */
+section {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px 20px 20px;
+}
+section h1 {
+	font-family: fira-sans,sans-serif;
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+
+
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article img {
+	object-fit: fill;
+	
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+	max-width: 250px;
+	max-height: 225px;
+}
+
+
+
+
+/* the styles for the aside */
+aside {
+	width: 215px;
+	float: left;
+	padding: 0 0 20px 20px;
+}
+aside h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+
+/* TABLE */
+table{
+	float: center;
+	border: 1px solid;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	background-color: white;
+	
+}
+td{
+	border: 1px solid;
+}
+  
+h3{
+	margin-top: 10%;
+	text-align: center;
+}
+
+
+
+/* images */
+  .m_long{
+	position: relative;
+	border-radius: 25px;
+	border: 10px solid #0000FF;
+  
+  }
+  .mb .mb_long{
+	z-index: 9999;
+	transition: opacity 1s linear;
+	cursor: pointer;
+  }
+  .mb{
+	width: 100%;
+	position: relative;	
+	margin:   auto;
+	max-width: 630px;
+	height: 350px;
+  }
+  .mb img {
+	width: 100%;
+	min-width: 300px;
+	max-width: 1024px;
+	position: absolute;	
+	overflow: hidden;
+	border: 10px solid black;
+	border-radius: 1000px;
+	margin: auto;
+	opacity: 1;
+	/* Sets the width and height for the images*/
+	max-width: 550px;
+	height: 250px;
+  }
+  img {
+	width: 100%;
+	max-width: 100px;
+	position: static;
+  }
+  .mb:hover > .mb_long{
+	opacity: 0;
+  }
+  
+  
+  /* menu layouts for different screen sizes*/
+@media only screen and (max-width: 4000px){
+	#mobile_menu{
+	display: none;
+	}
+	body{
+	font-size: 90%;
+	}
+	#nav_list ul li{
+	list-style: none;
+	border: none;
+	box-shadow: none;
+	background-image: none;
+	}
+	#nav_list ul li a {
+	padding-left: 0;
+	}
+	
+@media only screen and (max-width: 959px) {   
+	#mobile_menu { display: block; }
+	#nav_menu { display: none; }
+	header h2 { font-size: 1.375em; }       /* 22 ÷ 16 */ 
+	header h3 { font-size: .8125em; }   /* 13 ÷ 16 */ 
+	p { font-size: .875em; }            /* 14 ÷ 16 */ 
+	article h1, main h2, aside h2
+	{ font-size: 1em; }             /* base font size */ 
+	aside li { font-size: .875em; }     /* 14 ÷ 16 */ 
+	}
+
+	/* mobile portrait layout (479px or less) */ 
+	@media only screen and (max-width: 479px) { 
+	#mobile_menu { display: block; }
+	#nav_menu { display: none;  }
+	header h2 { font-size: 1.375em; }   /* 22 ÷ 16 */ 
+	header h3 { font-size: .8125em; }   /* 13 ÷ 16 */ 
+	p { font-size: .875em; }            /* 14 ÷ 16 */ 
+	article h1, main h2, aside h2 
+	{ font-size: 1em; }             /* base font size */ 
+	aside li { font-size: .875em; }     /* 14 ÷ 16 */ 
+	}}
+
+
+/* Form Styles */
+label{
+	color: black;
+	width: 20%;
+	font-weight: bold;
+	text-align: left;
+	display: inline-block;
+}
+input{
+	width: 15em;
+	margin: 0 0 .5em 1em;
+	text-align: center;	
+} 
+input:required, input:invalid{
+	box-shadow: none;
+}
+#button, #reset {
+	width: 7em;
+	background-color: silver;
+	box-shadow: 2px 2px 0  black;
+}
+.buttons{
+	text-align: center;
+}
+.appointment_form{
+	width: 75%;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 5%;
+	border: 2px solid black;
+}  
+.center{
+	text-align: center;
+}
+
+.finance{
+	text-align: center;
+}
+
+/* styles for loan calc on finance page */
+.loan-calculator{
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration:none;
+	font:bold 14px Arial, Helvetica, sans-serif;
+}
+
+/* styles for columns */
+
+.column{
+	float: left;
+	width: 45%;
+	padding: 1%;
+}
+
+.column img{
+	object-fit: fill;
+	
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+	max-width: 250px;
+	max-height: 225px;
+}
+@media only screen and (max-width: 479px)
+{
+	.column{
+		width: 100%;
+		
+	}
+}
+
+video{
+	padding-top: 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.profile{
+	float: left;
+}
+
+/* Stock Styles */
+.sale{
+	padding-left: 1%;
+	margin-bottom: 10px;
+}
+.sale_container{
+	border: none;
+	margin-left: 10%;
+}
+.price{
+	margin-bottom: 10px;
+}
